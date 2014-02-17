@@ -21,9 +21,16 @@ article {
 
 	div.entry-content {
 		margin-top: 50px;
+		width: 540px;
 		p {
 			font-size: 1.3em;
 			line-height: 1.8em;
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			font-size: 1.8em;
+			margin-top: 60px;
 			margin-bottom: 30px;
 		}
 	}
