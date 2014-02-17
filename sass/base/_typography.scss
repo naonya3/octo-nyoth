@@ -1,0 +1,25 @@
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$hiragino: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+
+body {
+	font-size: 62.5%;
+}
+
+body header h1
+{
+	font-size: $header-banner-font-size;
+	color: #fff;
+	font-family: $helvetica;
+}
+
+body header h1 a {
+	font-size: inherit;
+	text-decoration: none;
+	font-weight: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+
+.entry-title {
+	color: #000;
+}
