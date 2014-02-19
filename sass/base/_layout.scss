@@ -2,19 +2,29 @@
 // @import "compass/css3/box-sizing";
 
 body {
-	width: $global-contents-width;
+	max-width: $global-contents-width;
 	margin: 0 auto 0 auto;
 }
 
 header[role=banner] h1 {
 	@include box-sizing(border-box);
-	width: 900px;
+	max-width: 900px;
+	min-width: 320px;
 	background-color: #000;
 	padding: $header-banner-font-size / 2.4 $global-margin-right $header-banner-font-size / 2.4 $global-margin-left;
 }
 
 #main {
 	@include box-sizing(border-box);
-	width: 900px;
+	width: 100%;
 	padding: $header-banner-font-size / 2.4 $global-margin-right $header-banner-font-size / 2.4 $global-margin-left;
+
+	div#content {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	aside {
+		width: 100px;
+	}
 }

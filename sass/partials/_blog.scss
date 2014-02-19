@@ -1,7 +1,10 @@
 article {
 	font-family: $hiragino;
 	header {
+		max-width: 540px;
+		min-width: 320px;
 		position: relative;
+
 		h1.entry-title {
 			margin: 65px 0 0 0;
 			color: #000;
@@ -20,8 +23,9 @@ article {
 	}
 
 	div.entry-content {
+		max-width: 540px;
+		min-width: 320px;
 		margin-top: 50px;
-		width: 540px;
 		p {
 			font-size: 1.3em;
 			line-height: 1.8em;
