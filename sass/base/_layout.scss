@@ -2,6 +2,13 @@
 // @import "compass/css3/box-sizing";
 
 
+.basic-alignment {
+  &.left { float: left; margin-right: 1.5em; }
+  &.right { float: right; margin-left: 1.5em; }
+  &.center { display:block; margin: 0 auto 1.5em; }
+  &.left, &.right { margin-bottom: .8em; }
+}
+
 body {
 	max-width: 100%;
 	margin: 0 auto 0 auto;

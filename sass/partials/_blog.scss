@@ -43,5 +43,28 @@ article {
 		}
 	}
 
+	footer {
+		> nav.pagenation {
+			display: flex;
+			justify-content: space-between;
+			border-style: solid;
+			border-color: #000;
+			border-width: 1px 0 0 0;
+			padding-top: 10px;
+			position: relative;
+			> a {
+				text-transform: uppercase;
+				font-family: $helvetica;
+				font-size: 1.4em;
+				text-decoration: none;
+				&.prev &.next &.center{
+					
+				}
+				&.center {
+					text-align: center;
+				}
+			}
+		}
 
+	}
 }
