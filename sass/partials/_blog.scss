@@ -1,13 +1,12 @@
 article {
-	padding: $header-banner-font-size / 2.4 $mobile_margin $header-banner-font-size / 2.4 $mobile_margin;
+	padding: 0 $mobile_margin 0 $mobile_margin;
 	font-family: $hiragino;
 	header {
 		//max-width: 540px;
 		//min-width: 320px;
 		position: relative;
-
+		margin-top: 50px;
 		h1.entry-title {
-			margin: 65px 0 0 0;
 			color: #000;
 			font-weight: normal;
 			font-family: inherit;
@@ -16,7 +15,6 @@ article {
 		p.meta {
 			position: absolute;
 			font-size: 1.3em;
-			top: -1em;
 			font-family: inherit;
 			text-decoration: none;
 			color: #000;
@@ -71,15 +69,15 @@ article {
 
 div.blog-index {
 	article {
-		padding: $header-banner-font-size / 2.4 $mobile_margin $header-banner-font-size / 2.4 $mobile_margin;
 		font-family: $hiragino;
+		margin: 6.3em 0 0 0;
 		header {
 			//max-width: 540px;
 			//min-width: 320px;
 			position: relative;
-
 			h1.entry-title {
-				margin: 50px 0 0 0;
+				// position: relative;
+				// top: (1.3/2.4) + em;
 				color: #000;
 				font-weight: normal;
 				font-family: inherit;
@@ -87,8 +85,8 @@ div.blog-index {
 			}
 			p.meta {
 				position: absolute;
+				top:-1em;
 				font-size: 1.3em;
-				top: -1em;
 				font-family: inherit;
 				text-decoration: none;
 				color: #000;
@@ -103,7 +101,7 @@ div.blog-index {
 			p {
 				font-size: 1.3em;
 				line-height: 1.8em;
-				margin-bottom: 30px;
+				margin-bottom: 10px;
 				text-align: justify;
 			    text-justify: inter-ideograph;
 			}
