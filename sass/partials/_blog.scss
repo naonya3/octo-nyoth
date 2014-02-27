@@ -116,6 +116,21 @@ div.blog-index {
 			}
 		}
 
+		> footer {
+			position: relative;
+			height: 2em;
+			a[rel='full-article'] {
+				position: absolute;
+				font-size: 1.2em;
+				color: #fff;
+				background-color: #4a4a4a;
+				@include border-radius(2px);
+				padding: 0.5em 1em 0.5em 1em;
+				right: 0;
+				text-decoration: none;
+			}
+		}
+
 		footer {
 			> nav.pagenation {
 				display: flex;
