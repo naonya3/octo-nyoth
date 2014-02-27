@@ -118,7 +118,7 @@ div.blog-index {
 
 		> footer {
 			position: relative;
-			height: 2em;
+			height: 2.5em;
 			a[rel='full-article'] {
 				position: absolute;
 				font-size: 1.2em;
@@ -130,29 +130,35 @@ div.blog-index {
 				text-decoration: none;
 			}
 		}
-
-		footer {
-			> nav.pagenation {
-				display: flex;
-				justify-content: space-between;
-				border-style: solid;
-				border-color: #000;
-				border-width: 1px 0 0 0;
-				padding-top: 10px;
-				position: relative;
-				> a {
-					text-transform: uppercase;
-					font-family: $helvetica;
-					font-size: 1.4em;
-					text-decoration: none;
-					&.prev &.next &.center{
-						
-					}
-					&.center {
-						text-align: center;
-					}
-				}
-			}
+	}
+	nav.pagination {
+		margin: 5em $mobile_margin 0 $mobile_margin;
+		padding-top: 1em;
+		display: block;
+		position: relative;
+		border-style: solid;
+		border-width: 1px 0 0 0;
+		height: 2em;
+		a {
+			font-family: $helvetica;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		.next, .prev {
+			position: absolute;
+			display: block;
+		}
+		.center {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.next {
+			right: 0;
+		}
+		.prev {
+			left: 0;
 		}
 	}
 }
