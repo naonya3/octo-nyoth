@@ -70,7 +70,7 @@ article {
 div.blog-index {
 	article {
 		font-family: $hiragino;
-		margin: 6.3em 0 0 0;
+		margin: 8.7em 0 0 0;
 		header {
 			//max-width: 540px;
 			//min-width: 320px;
@@ -85,10 +85,13 @@ div.blog-index {
 			}
 			p.meta {
 				position: absolute;
-				top:-1em;
+				width: 100%;
+				top:-2.5em;
 				font-size: 1.3em;
 				font-family: inherit;
 				text-decoration: none;
+				border-style: solid;
+				border-width: 0	0 1px 0;
 				color: #000;
 			}	
 		}
