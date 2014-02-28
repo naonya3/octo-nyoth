@@ -1,0 +1,24 @@
+#blog-archives {
+	padding: 5.0em $mobile-margin 0 $mobile-margin;
+	h2 {
+		font-size: 2.4em;
+		margin-bottom: (4.3/2.4)+em;
+	}
+	article {
+		padding: 0;
+		position: relative;
+		margin-bottom: 4.3em;
+		a {
+			text-decoration: none;
+		}
+		h1 {
+			font-size: 1.8em;
+		}
+		p.meta {
+			position: absolute;
+			font-size: 1.3em;
+			top: -1em;
+		}	
+	}
+	
+}
