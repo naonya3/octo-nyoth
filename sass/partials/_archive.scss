@@ -13,6 +13,14 @@
 		}
 		h1 {
 			font-size: 1.8em;
+			a {
+				color: #000;
+				@include transition(color 0.3s);
+				&:hover {
+					color: $link-color;
+				}
+			}
+
 		}
 		p.meta {
 			position: absolute;
