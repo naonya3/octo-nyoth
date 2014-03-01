@@ -17,21 +17,17 @@ single: true
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
-    <nav class="pagenation">
-      {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">前の記事{% comment %}&laquo; {{page.previous.title}}{% endcomment %}</a>
-      {% else %}
-        <a class="prev" href="{{ root_url }}/" title="TOP">Top</a>
-      {% endif %}
-        <a class="center" href="{{ root_url }}/blog/archives">Archive</a>
-      {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}" title="{{page.next.title}}">次の記事{% comment %}{{page.next.title}} &raquo;{% endcomment %}</a>
-      {% else %}
-        <a class="next" href="{{ root_url }}/">Top</a>
-      {% endif %}
-    </nav>
   </footer>
 </article>
+<nav class="pagination">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">Prev{% comment %}&laquo; {{page.previous.title}}{% endcomment %}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}" title="{{page.next.title}}">Next{% comment %}{{page.next.title}} &raquo;{% endcomment %}</a>
+  {% endif %}
+    <div class="center"><a href="{{ root_url }}/blog/archives">Archive</a></div>
+</nav>
 {% if site.disqus_short_name and page.comments == true %}
   <section>
     <h1>Comments</h1>

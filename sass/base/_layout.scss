@@ -46,3 +46,34 @@ header[role=banner] h1 {
 		}
 	}
 }
+
+nav.pagination {
+	margin: 5em $mobile_margin 0 $mobile_margin;
+	padding-top: 1em;
+	display: block;
+	position: relative;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	height: 2em;
+	a {
+		font-family: $helvetica;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.next, .prev {
+		position: absolute;
+		display: block;
+	}
+	.center {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.next {
+		right: 0;
+	}
+	.prev {
+		left: 0;
+	}
+}
