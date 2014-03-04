@@ -73,3 +73,14 @@ nav.pagination {
 		left: 0;
 	}
 }
+
+footer[role=contentinfo] {
+	margin-top: 5.0em;
+	padding: 0 $mobile_margin 0 $mobile_margin;
+	p {
+		text-align: center;
+		font-family: $helvetica;
+		font-size: 1.2em;
+		color: #6d6d6d;
+	}
+}
