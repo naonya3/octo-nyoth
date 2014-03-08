@@ -7,7 +7,7 @@ $link-color: #4a90e2;
 $text-color: #2f2f2f;
 
 a {
-	@include link-colors(#4a90e2,#9F8CD4,#9F8CD4,#9F8CD4);
+	@include link-colors(#4a90e2,#4a90e2,#4a90e2,#4a90e2);
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
